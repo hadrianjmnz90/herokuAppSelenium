@@ -10,11 +10,6 @@ public class BasicAutTest extends BaseTests {
     public void TestBasicAut(String username, String password, boolean b) {
         BasicAuth basicAuth = homePage.clickBasicAuth();
         basicAuth.handleAuthAlert(username, password);
-     //   Assert.assertEquals(true, b);
-     //   getHome();
-        // Assert.assertEquals(basicAuth.getConfirmText(), "Congratulations! You must have the proper credentials.",
-        //       "confirm message does not match");
-
     }
 
     @DataProvider
