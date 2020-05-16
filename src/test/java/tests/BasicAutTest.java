@@ -1,6 +1,7 @@
 package tests;
 
 import base.BaseTests;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pages.BasicAuth;
@@ -10,6 +11,8 @@ public class BasicAutTest extends BaseTests {
     public void TestBasicAut(String username, String password, boolean b) {
         BasicAuth basicAuth = homePage.clickBasicAuth();
         basicAuth.handleAuthAlert(username, password);
+        Assert.assertEquals(true, false);
+        //todo add assertion
     }
 
     @DataProvider
